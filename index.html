@@ -1,0 +1,193 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TODO DE TI</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;1,300&display=swap');
+
+  :root{--accent:#ffdcb4}
+
+  body{margin:0;font-family:system-ui,Arial,Helvetica,sans-serif;background:#111;color:#fff}
+
+  .page-title{font-family:'Playfair Display',serif;text-align:center;padding:28px 16px;margin:0;font-size:36px;letter-spacing:1px;color:var(--accent)}
+
+  .grid-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .card {
+    position: relative;
+    width: 100%;
+    height: 680px;
+    overflow: hidden;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .small-card {
+    height: 340px;
+  }
+
+  .row-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .bg-img {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(0.55) saturate(1.1);
+    z-index: 0;
+    transition: opacity 0.5s;
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.45) 100%);
+    z-index: 1;
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .eyeline {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 13px;
+    color: rgba(255,220,180,0.75);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+
+  .main-text {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-shadow: 0 4px 32px rgba(0,0,0,0.5);
+  }
+
+  .main-text::after {
+    content: '';
+    display: block;
+    margin: 10px auto 0;
+    width: 40px;
+    height: 1.5px;
+    background: rgba(255,220,180,0.6);
+  }
+
+  .sub-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: rgba(255,220,180,0.85);
+    letter-spacing: 1.5px;
+  }
+
+  .fs-big { font-size: 84px; }
+  .fs-med { font-size: 52px; }
+ 
+  .dots { display: flex; gap: 6px; }
+  .dot { width: 4px; height: 4px; border-radius: 50%; background: rgba(255,220,180,0.5); }
+  .dot.mid { background: rgba(255,220,180,0.9); width: 6px; height: 6px; margin-top: -1px; }
+  </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="page-title">TODO DE TI</h1>
+    </header>
+    <main>
+
+  <div class="grid-wrap">
+
+  
+  <div class="card">
+    <div class="bg-img" id="bg0" style="background-image:url('tus ojitos.jpeg')"></div>
+    <div class="overlay"></div>
+    <div class="content">
+      <span class="eyeline">para ti</span>
+      <div class="main-text fs-big">Tus ojitos</div>
+      
+      <div class="dots"><div class="dot"></div><div class="dot mid"></div><div class="dot"></div></div>
+    </div>
+  </div>
+ 
+
+  
+  <div class="row-4">
+
+    <div class="card small-card">
+      <div class="bg-img" id="bg1" style="background-image:url('Tu sonrisa.jpeg')"></div>
+      <div class="overlay"></div>
+      <div class="content">
+        <span class="eyeline">siempre</span>
+        <div class="main-text fs-med">Tu sonrisa</div>
+        
+      </div>
+    </div>
+
+    
+    <div class="card small-card">
+      <div class="bg-img" id="bg2" style="background-image:url('Tu risa.jpeg')"></div>
+      <div class="overlay"></div>
+      <div class="content">
+        <span class="eyeline">siempre</span>
+        <div class="main-text fs-med">Tu risa</div>
+        
+      </div>
+    </div>
+
+   
+    <div class="card small-card">
+      <div class="bg-img" id="bg3" style="background-image:url('Tu voz.jpeg')"></div>
+      <div class="overlay"></div>
+      <div class="content">
+        <span class="eyeline">siempre</span>
+        <div class="main-text fs-med">Tu voz</div>
+        
+      </div>
+    </div>
+
+    
+    <div class="card small-card">
+      <div class="bg-img" id="bg4" style="background-image:url('Tu forma de ser.jpeg')"></div>
+      <div class="overlay"></div>
+      <div class="content">
+        <span class="eyeline">siempre</span>
+        <div class="main-text fs-med">Tu forma de ser</div>
+        
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </main>
+</body>
+</html>
+
+
